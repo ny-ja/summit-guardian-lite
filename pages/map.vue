@@ -14,7 +14,6 @@ const goBack = () => {
     <div class="min-h-screen flex items-center justify-center bg-white dark:bg-black dark:text-white">
         <div class="relative w-full max-w-4xl p-6 sm:p-8 lg:p-10 bg-gray-100 dark:bg-zinc-900 shadow-lg rounded-lg">
             
-            <!-- Back Button (Moved outside the Map container) -->
             <button 
                 @click="goBack" 
                 type="button"
@@ -28,7 +27,6 @@ const goBack = () => {
                 </svg>
             </button>
 
-            <!-- Map Container (Padding added to avoid overlap) -->
             <div class="mt-12">
                 <Map />
             </div>
