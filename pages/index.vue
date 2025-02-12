@@ -104,8 +104,7 @@ onMounted(async () => {
                                     health insights.
                                 </p>
                                 <span
-                                    class="text-xl dark:text-gray-300 text-gray-700 bg-gray-100 dark:bg-white/10 font-bold font-mono p-1 rounded"
-                                    data-v-8e92eaa8="">{{
+                                    :class="['text-xl dark:text-gray-300 text-gray-700 bg-gray-100 dark:bg-white/10 font-bold font-mono p-1 rounded', { 'dark:text-red-300 text-red-700 shadow-2xl shadow-red-500 border border-red-500': isHeartRateAbnormal }]">{{
                                         databaseData["sensor/heartRate"] || "Initializing..."
                                     }}
                                     bpm</span>
